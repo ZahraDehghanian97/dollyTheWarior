@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>left = 0 ;
-right = 0 ;
+            <string>right = 0;
+left = 0 ;
 up = 0 ;
 down = 0 ;
 </string>
@@ -59,27 +59,27 @@ if(right == 1) x+=5 ;
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="4" ename="vesstle_wall_obj">
       <action>
         <libid>1</libid>
-        <id>111</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move_random</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>5</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>5</string>
+            <kind>1</kind>
+            <string>instance_create(x,y,damageVesttleWall_obj);
+instance_destroy();
+</string>
           </argument>
         </arguments>
       </action>
@@ -96,8 +96,5 @@ if(right == 1) x+=5 ;
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>16,16</point>
-    <point>16,16</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>

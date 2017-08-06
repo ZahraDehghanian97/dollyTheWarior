@@ -16,6 +16,8 @@
     <sprite>sprites\enemy_dead_spr</sprite>
     <sprite>sprites\enemy_settle_spr</sprite>
     <sprite>sprites\zooksin1_spr</sprite>
+    <sprite>sprites\sprite11</sprite>
+    <sprite>sprites\damageVesttleWall_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -33,10 +35,12 @@
     <object>objects\enemy3_obj</object>
     <object>objects\enemy_ctrl_obj</object>
     <object>objects\HUD_obj</object>
+    <object>objects\vesstle_wall_obj</object>
+    <object>objects\damageVesttleWall_obj</object>
     <object>objects\zooksin1_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0_new</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
