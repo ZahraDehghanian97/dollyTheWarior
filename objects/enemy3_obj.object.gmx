@@ -67,9 +67,10 @@ else if (sprite_index == enemy_dead_spr ){
 
 }
 
-else if(x==0 ) {
+else if(x&lt;0 ) {
     character_obj.alive_enemy -- ;
     x-=5 ;
+    instance_destroy();
 }
 else {
 x-=5;

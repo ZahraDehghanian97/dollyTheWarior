@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-draw_text(1,2,string(character_obj.alive_enemy));
+            <string>draw_text(1,2,"chance : ");
+draw_text(80,2,string(character_obj.alive_enemy));
+draw_text(1,20,"zooksin inside boddy : ");
+draw_text(180,20,string(enemy_ctrl_obj.numberOfZooksin));
+
 </string>
           </argument>
         </arguments>

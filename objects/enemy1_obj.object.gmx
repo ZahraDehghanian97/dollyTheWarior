@@ -92,14 +92,16 @@ else if (sprite_index == enemy_dead_spr ){
 
 }
 
-else if(x==0 ) {
+else if(x&lt;0 ) {
     character_obj.alive_enemy --;
     x-=5 ;
+    instance_destroy();
 }
 else {
     if(readytoshoot ==1 ){
     readytoshoot =0 ;
     alarm[1] =60 ;
+    enemy_ctrl_obj.numberOfZooksin += 8 ;
     idd1 = instance_create(x,y,zooksin1_obj);
     idd1.right = 1 ;
      idd2 = instance_create(x,y,zooksin1_obj);
