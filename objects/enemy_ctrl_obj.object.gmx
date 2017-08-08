@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>allowToShowMessage = true ;
 alarm[0] = 20;
 numberOfZooksin = 0 ;
 
@@ -51,19 +51,19 @@ numberOfZooksin = 0 ;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> r = choose(0,1,2);//,3,4,5,6);
+            <string> r = choose(0,1,2,3,4,5);
                 if(r==0 ){
-                  instance_create(645,random_range(100,300),enemy1_obj);
+                  instance_create(1024,random_range(200,500),enemy1_obj);
   
 
                        }
             else if(r==1){
-                  instance_create(645,random_range(100,300),enemy2_obj);
+                  instance_create(1024,random_range(200,500),enemy2_obj);
 
                          }
             else if (r== 2){
                                 
-                  instance_create(645,random_range(100,300),enemy3_obj);
+                  instance_create(1024,random_range(200,500),enemy3_obj);
                            }
                                 
 alarm[0]=60;

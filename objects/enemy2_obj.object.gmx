@@ -26,6 +26,33 @@
           <argument>
             <kind>1</kind>
             <string>path_start(path_enemy2,2,2,0);
+seccondLife = true ;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>seccondLife = false ;
+sprite_index = enemy2_spr ; 
+path_start(path_enemy2_seccondLife,2,2,0);
+
 </string>
           </argument>
         </arguments>
@@ -51,19 +78,21 @@
             <string>
 if(sprite_index == enemy_settle_spr  ){
     path_end();
-    if(y&lt;470 ){
+    if(y&lt;672 ){
        y+=2 ;
        // alarm[0] = 5 ;
     
     }   
     else {
     sprite_index = enemy_dead_spr ;
+    if(seccondLife)
+    alarm[0] = 120 ;
     
     } 
 
 
 }
-else if (sprite_index == enemy_dead_spr ){
+else if (sprite_index == enemy_dead_spr  ){
 
 }
 

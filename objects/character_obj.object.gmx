@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>m_speed =5;
+            <string>m_speed =10;
 alarm[0] = 20;
 //alarm[1] = 90;
 alive_enemy = 10 ;

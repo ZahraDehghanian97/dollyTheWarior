@@ -24,6 +24,7 @@
     <path>paths\path_enemy2</path>
     <path>paths\path_enemy1</path>
     <path>paths\path_enemy3</path>
+    <path>paths\path_enemy2_seccondLife</path>
   </paths>
   <objects name="objects">
     <object>objects\bullet1_obj</object>

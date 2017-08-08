@@ -76,7 +76,7 @@ readytoshoot =1 ;
             <string>
 if(sprite_index == enemy_settle_spr  ){
     path_end();
-    if(y&lt;470 ){
+    if(y&lt;672 ){
        y=y+2 ;
        // alarm[0] = 5 ;
     

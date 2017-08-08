@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>path_start(path_enemy3,3,2,0);
+life = 2 ;
 </string>
           </argument>
         </arguments>
@@ -51,7 +52,7 @@
             <string>
 if(sprite_index == enemy_settle_spr  ){
     path_end();
-    if(y&lt;470 ){
+    if(y&lt;672 ){
        y+=2 ;
        // alarm[0] = 5 ;
     
@@ -97,10 +98,14 @@ x-=5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(other){
+            <string>life-- ;
+
+if(life == 0 ){
+with(other){
  instance_destroy();
 }
 sprite_index = enemy_settle_spr ;
+}
 </string>
           </argument>
         </arguments>
