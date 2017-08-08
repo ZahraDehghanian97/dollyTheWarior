@@ -49,10 +49,11 @@ seccondLife = true ;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>seccondLife = false ;
+            <string>if(seccondLife)
+{seccondLife = false ;
 sprite_index = enemy2_spr ; 
 path_start(path_enemy2_seccondLife,2,2,0);
-
+}
 </string>
           </argument>
         </arguments>
@@ -102,7 +103,7 @@ else if(x&lt;0 ) {
     instance_destroy();
 }
 else {
-x-=5;
+//x-=5;
 }
 </string>
           </argument>

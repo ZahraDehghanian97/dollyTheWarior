@@ -18,6 +18,10 @@
     <sprite>sprites\zooksin1_spr</sprite>
     <sprite>sprites\sprite11</sprite>
     <sprite>sprites\damageVesttleWall_spr</sprite>
+    <sprite>sprites\RBC_spr</sprite>
+    <sprite>sprites\RBC_ill_spr</sprite>
+    <sprite>sprites\sheild_spr</sprite>
+    <sprite>sprites\RBC_sheild_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -39,6 +43,9 @@
     <object>objects\vesstle_wall_obj</object>
     <object>objects\damageVesttleWall_obj</object>
     <object>objects\zooksin1_obj</object>
+    <object>objects\RBC_ctrl_obj</object>
+    <object>objects\RBC_obj</object>
+    <object>objects\sheild_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

@@ -29,6 +29,7 @@
 draw_text(80,2,string(character_obj.alive_enemy));
 draw_text(1,20,"zooksin inside boddy : ");
 draw_text(180,20,string(enemy_ctrl_obj.numberOfZooksin));
+draw_text(1,40,string(RBC_ctrl_obj.temp));
 
 </string>
           </argument>

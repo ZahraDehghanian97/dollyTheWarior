@@ -105,7 +105,7 @@ injurySeverity++ ;
 if(injurySeverity &gt; 4 ) {
     if(enemy_ctrl_obj.allowToShowMessage){
     show_message("you are dead");
-    enemy_ctrl_obj.allowToShowMessage= false ;
+    enemy_ctrl_obj.allowToShowMessage = false ;
     alarm[1] =30 ;
     injurySeverity = 0 ;}
 
