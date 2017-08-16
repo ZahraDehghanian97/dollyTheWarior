@@ -28,7 +28,9 @@
             <string>allowToShowMessage = true ;
 alarm[0] = 20;
 numberOfZooksin = 0 ;
-
+enemyinlevel = 20 ;
+numberofEnemy = 0 ;
+killedenemy = 0 ;
 </string>
           </argument>
         </arguments>
@@ -52,21 +54,35 @@ numberOfZooksin = 0 ;
           <argument>
             <kind>1</kind>
             <string> r = choose(0,1,2,3,4,5);
+ if(numberofEnemy &lt; enemyinlevel ){
+ 
                 if(r==0 ){
                   instance_create(1024,random_range(200,500),enemy1_obj);
+                  numberofEnemy++ ;
   
 
                        }
             else if(r==1){
                   instance_create(1024,random_range(200,500),enemy2_obj);
-
+                  numberofEnemy++ ;
                          }
             else if (r== 2){
                                 
                   instance_create(1024,random_range(200,500),enemy3_obj);
+                  numberofEnemy++ ;
                            }
-                                
-alarm[0]=60;
+    alarm[0]=60;          
+}
+else if (   killedenemy &lt; enemyinlevel ){
+    alarm[0]=60;  
+}
+else if ( killedenemy &gt;= enemyinlevel ) {
+    show_message("you win :)))");
+    }
+    
+                      
+
+
 </string>
           </argument>
         </arguments>

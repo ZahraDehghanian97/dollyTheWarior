@@ -52,11 +52,12 @@
   </views>
   <instances>
     <instance objName="character_obj" x="288" y="416" name="inst_E2073309" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemy_ctrl_obj" x="-96" y="-64" name="inst_BAC6238A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="HUD_obj" x="-64" y="-64" name="inst_01A09494" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="vesstle_wall_obj" x="576" y="736" name="inst_20E468CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="vesstle_wall_obj" x="576" y="32" name="inst_F2E34DCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RBC_ctrl_obj" x="-128" y="-64" name="inst_32ADC6E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="HUD_obj" x="-128" y="-64" name="inst_01A09494" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="vesstle_wall_obj" x="576" y="736" name="inst_20E468CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="enemy_ctrl_obj" x="-192" y="-64" name="inst_0D3509A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bullet1_obj" x="-64" y="-64" name="inst_A10BAD9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bullet1_obj" x="-96" y="-128" name="inst_1F0B2BF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

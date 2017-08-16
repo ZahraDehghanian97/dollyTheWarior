@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>path_start(path_enemy2,2,2,0);
 seccondLife = true ;
+countindead = false ;
 </string>
           </argument>
         </arguments>
@@ -93,10 +94,12 @@ if(sprite_index == enemy_settle_spr  ){
 
 
 }
-else if (sprite_index == enemy_dead_spr  ){
-
+else if (sprite_index == enemy_dead_spr){if( countindead == false  ){
+    if(seccondLife== false)  {   enemy_ctrl_obj.killedenemy ++ ;
+                                countindead = true ;
+                                }
 }
-
+}
 else if(x&lt;0 ) {
     character_obj.alive_enemy -- ;
     x-=5;
