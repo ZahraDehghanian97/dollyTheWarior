@@ -16,14 +16,16 @@
     <sprite>sprites\enemy_dead_spr</sprite>
     <sprite>sprites\enemy_settle_spr</sprite>
     <sprite>sprites\zooksin1_spr</sprite>
-    <sprite>sprites\sprite11</sprite>
+    <sprite>sprites\septum_block_vesttle_spr</sprite>
     <sprite>sprites\damageVesttleWall_spr</sprite>
     <sprite>sprites\RBC_spr</sprite>
     <sprite>sprites\RBC_ill_spr</sprite>
     <sprite>sprites\sheild_spr</sprite>
     <sprite>sprites\RBC_sheild_spr</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths">
     <path>paths\path_enemy2</path>
     <path>paths\path_enemy1</path>
@@ -46,7 +48,12 @@
     <object>objects\RBC_ctrl_obj</object>
     <object>objects\RBC_obj</object>
     <object>objects\sheild_obj</object>
+    <object>objects\inside_body_cell_ctrl_obj</object>
+    <object>objects\central_ctrl_obj</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeline0</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\room1</room>
   </rooms>

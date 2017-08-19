@@ -86,7 +86,9 @@ amount = 0 ;
 if(sprite_index == RBC_ill_spr ){
 ill = true ;
 }
-x-=3 ;
+if(central_ctrl_obj.run == true ) {x-=2 ;}
+//if(run == false) {}
+
 </string>
           </argument>
         </arguments>
@@ -111,10 +113,7 @@ x-=3 ;
             <kind>1</kind>
             <string>if(sprite_index == RBC_ill_spr ) {
 RBC_ctrl_obj.lostRBC ++ ;
-if( RBC_ctrl_obj.lostRBC == 80 ) {show_message("you are going to br dead soon ... ")
 
-
-}
 instance_destroy () ;
 
 

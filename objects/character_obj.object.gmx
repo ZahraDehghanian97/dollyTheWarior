@@ -94,7 +94,8 @@ alarm[0]=30;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y+=m_speed;
+            <string>if(y&lt;768)
+y+=m_speed;
 </string>
           </argument>
         </arguments>
@@ -117,7 +118,8 @@ alarm[0]=30;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x+=m_speed;
+            <string>if(x&lt;1024)
+x+=m_speed;
 </string>
           </argument>
         </arguments>
@@ -140,7 +142,8 @@ alarm[0]=30;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y-=m_speed;
+            <string>if(y&gt;0 )
+y-=m_speed;
 </string>
           </argument>
         </arguments>
@@ -163,7 +166,8 @@ alarm[0]=30;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x-=m_speed;
+            <string>if(x&gt;0) 
+x-=m_speed;
 </string>
           </argument>
         </arguments>

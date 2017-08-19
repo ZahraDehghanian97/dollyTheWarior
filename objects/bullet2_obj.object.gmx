@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x +=10;
+            <string>x +=20;
 </string>
           </argument>
         </arguments>

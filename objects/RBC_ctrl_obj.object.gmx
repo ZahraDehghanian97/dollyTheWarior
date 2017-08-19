@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>for (i = 0 ; i&lt;3 ; i++) {
-    instance_create(1024,random_range(200,500),RBC_obj);
+    instance_create(1000,random_range(200,500),RBC_obj);
 
 }
 
@@ -58,8 +58,10 @@ lostRBC = 0 ;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(1024,random_range(200,500),RBC_obj);
+            <string>if(central_ctrl_obj.run == true ) {
+instance_create(1000,random_range(200,500),RBC_obj);
 alarm[1] = 15 ; 
+}
 </string>
           </argument>
         </arguments>
@@ -85,21 +87,40 @@ alarm[1] = 15 ;
             <string>// r = choose (1,2 ) ;
 // if (r== 1 )
 //  {
-    w = instance_number(RBC_obj) ;
-    if(w-temp &gt; 0 ) {
-    for( temp = 1 ; w-temp&gt; 0 ; temp++){
+//    w = instance_number(RBC_obj) ;
+//    if(w-temp &gt; 0 ) {
+//    for( temp = 1 ; w-temp&gt; 0 ; temp++){
    // iddd = instance_find(RBC_obj,w-temp ) ;
-    idddd = instance_find(RBC_obj,temp ) ;
+//    idddd = instance_find(RBC_obj,temp ) ;
+   
+//     if(idddd.sheild == false ){
+//        idddd.alarm[0] = 1 ;
+//        temp  = w ; 
+//    }
+// }
+// temp = 1 ;
+// }
+// }
+// alarm[0] = 15 ;
+ 
+ 
+ 
+ 
+w  = instance_number(RBC_obj) ;
+r = random_range(0,w);
+
+idddd = instance_find(RBC_obj,r ) ;
    
      if(idddd.sheild == false ){
         idddd.alarm[0] = 1 ;
-        temp  = w ; 
+       // temp  = w ; 
     }
- }
- temp = 1 ;
- }
-// }
+    if( lostRBC == 80 ) {show_message("protect your cell , you have been lost lots of them ... ")
+
+
+}
  alarm[0] = 15 ;
+ 
 </string>
           </argument>
         </arguments>

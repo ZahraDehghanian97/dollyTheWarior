@@ -82,6 +82,10 @@ instance_destroy();
 if(enemy_ctrl_obj.numberOfZooksin&gt;0){
 enemy_ctrl_obj.numberOfZooksin -- ;
 }
+with(other) {
+ injurySeverity++ ;
+
+}
 </string>
           </argument>
         </arguments>
@@ -105,9 +109,9 @@ enemy_ctrl_obj.numberOfZooksin -- ;
           <argument>
             <kind>1</kind>
             <string>
-if(enemy_ctrl_obj.numberOfZooksin&gt;0){
+//if(enemy_ctrl_obj.numberOfZooksin&gt;0){
 enemy_ctrl_obj.numberOfZooksin -- ;
-}
+//}
 </string>
           </argument>
         </arguments>

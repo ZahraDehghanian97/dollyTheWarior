@@ -84,14 +84,18 @@ if(sprite_index == enemy_settle_spr  ){
     }   
     else {
     sprite_index = enemy_dead_spr ;
-    
+    x-=2 ;
     } 
 
 
 }
-else if (sprite_index == enemy_dead_spr){if( countindead== false  ){
+else if (sprite_index == enemy_dead_spr){
+    if(central_ctrl_obj.run == true )
+    x-=2 ;
+    if( countindead== false  ){
     enemy_ctrl_obj.killedenemy ++ ;
     countindead = true ;
+    x-=2 ;
 }
 }
 
