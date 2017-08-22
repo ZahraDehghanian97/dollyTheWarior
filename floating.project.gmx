@@ -22,6 +22,8 @@
     <sprite>sprites\RBC_ill_spr</sprite>
     <sprite>sprites\sheild_spr</sprite>
     <sprite>sprites\RBC_sheild_spr</sprite>
+    <sprite>sprites\hook_spr</sprite>
+    <sprite>sprites\line_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -50,6 +52,8 @@
     <object>objects\sheild_obj</object>
     <object>objects\inside_body_cell_ctrl_obj</object>
     <object>objects\central_ctrl_obj</object>
+    <object>objects\hook_obj</object>
+    <object>objects\line_obj</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>

@@ -115,10 +115,10 @@ idddd = instance_find(RBC_obj,r ) ;
         idddd.alarm[0] = 1 ;
        // temp  = w ; 
     }
-    if( lostRBC == 80 ) {show_message("protect your cell , you have been lost lots of them ... ")
+//    if( lostRBC == 80 ) {show_message("protect your cell , you have been lost lots of them ... ")
 
 
-}
+//}
  alarm[0] = 15 ;
  
 </string>
