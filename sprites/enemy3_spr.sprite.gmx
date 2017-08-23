@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>14</bbox_left>
-  <bbox_right>98</bbox_right>
-  <bbox_top>15</bbox_top>
-  <bbox_bottom>50</bbox_bottom>
+  <bbox_left>21</bbox_left>
+  <bbox_right>147</bbox_right>
+  <bbox_top>23</bbox_top>
+  <bbox_bottom>76</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>114</width>
-  <height>57</height>
+  <width>172</width>
+  <height>86</height>
   <frames>
     <frame index="0">images\enemy3_spr_0.png</frame>
   </frames>

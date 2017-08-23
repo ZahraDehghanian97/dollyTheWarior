@@ -218,6 +218,7 @@ sprite_index = enemy_settle_spr ;
             <string>if(path_index == path_null ) {
 path_end() ;
 show_message("first bactory is inside your body ... ") ;
+
 room_goto_next();
 //show_message("dvd")
 }

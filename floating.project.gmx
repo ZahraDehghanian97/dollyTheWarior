@@ -26,9 +26,14 @@
     <sprite>sprites\line_spr</sprite>
     <sprite>sprites\nothimg_spr</sprite>
     <sprite>sprites\path_point_spr</sprite>
+    <sprite>sprites\play_button_spr</sprite>
+    <sprite>sprites\setting_button_spr</sprite>
+    <sprite>sprites\exit_button_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_enemy2</path>
@@ -56,6 +61,9 @@
     <object>objects\central_ctrl_obj</object>
     <object>objects\hook_obj</object>
     <object>objects\line_obj</object>
+    <object>objects\play_button_obj</object>
+    <object>objects\setting_button_obj</object>
+    <object>objects\exit_button_obj</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
@@ -63,6 +71,7 @@
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room2</room>
+    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
