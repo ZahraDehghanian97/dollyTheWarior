@@ -28,6 +28,55 @@
             <string>path_start(path_enemy3,3,2,0);
 life = 2 ;
 countindead = false ;
+flag = false ;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+x2 = ((x+enemy_ctrl_obj.firstBlockX)/2) - 20 ; 
+y2 = ((y+enemy_ctrl_obj.firstBlockY)/2) - 20 ; 
+x1 = ((x2+x)/2 )+ 30 ;
+y1 = ((y2+y)/2 )+ 30 ;
+x3 = ((x2+enemy_ctrl_obj.firstBlockX)/2) + 20 ; 
+y3 =  ((y2+enemy_ctrl_obj.firstBlockY)/2) + 20;
+x4 = enemy_ctrl_obj.firstBlockX ; 
+y4 = enemy_ctrl_obj.firstBlockY ; 
+if(y3&gt;y4)y5 = enemy_ctrl_obj.firstBlockY-200 ;
+else y5 = enemy_ctrl_obj.firstBlockY+200 ;
+
+x5=enemy_ctrl_obj.firstBlockX;
+
+path_null = path_add() ;
+path_add_point(path_null,x1,y1,100 );
+path_add_point(path_null,x2,y2,100 );
+path_add_point(path_null,x3,y3,100 );
+path_add_point(path_null,x4,y4,100 );
+path_add_point(path_null,x5,y5,100 );
+path_start(path_null,2,2,0);
+//show_message("hi")
+path_set_closed(path_null,false ) ;
+draw_debug_path_point=true;
+
+//path_endaction = 2; 
 </string>
           </argument>
         </arguments>
@@ -80,8 +129,10 @@ else if(x&lt;0 ) {
     instance_destroy();
 }
 else {
-if(enemy_ctrl_obj.first = true ){
+if(enemy_ctrl_obj.first = true and flag == false ){
         path_end();
+        flag =true ;
+        alarm[0] = 1 ;
     
     }
 
@@ -115,6 +166,34 @@ with(other){
  instance_destroy();
 }
 sprite_index = enemy_settle_spr ;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(path_index == path_null ) {
+path_end() ;
+show_message("first bactory is inside your body ... ") ;
+room_goto_next();
+//show_message("dvd")
 }
 </string>
           </argument>

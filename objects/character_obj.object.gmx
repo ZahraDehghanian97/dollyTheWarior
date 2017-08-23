@@ -190,7 +190,7 @@ x-=m_speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,sheild_obj) ;
+            <string>instance_create(x,y-60,sheild_obj) ;
 </string>
           </argument>
         </arguments>
@@ -219,17 +219,17 @@ x-=m_speed;
 
  r = choose(0,1,2);
                 if(r==0 ){
-                  instance_create(x,y,bullet1_obj);
+                  instance_create(x,y+20,bullet1_obj);
   
 
                        }
             else if(r==1){
-                  instance_create(x,y,bullet2_obj);
+                  instance_create(x,y+20,bullet2_obj);
 
                          }
             else if (r== 2){
                                 
-                  instance_create(x,y,bullet3_obj);
+                  instance_create(x,y+20,bullet3_obj);
                            }
                                 
 alarm[0]=30;
