@@ -77,15 +77,15 @@ if(right == 1) x+=5 ;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,damageVesttleWall_obj);
+            <string>
 instance_destroy();
 if(enemy_ctrl_obj.numberOfZooksin&gt;0){
 enemy_ctrl_obj.numberOfZooksin -- ;
 }
-with(other) {
- injurySeverity++ ;
+ other.injurySeverity++ ;
+ if(other.sprite_index== nothimg_spr)
+        instance_create(x,y,damageVesttleWall_obj);
 
-}
 </string>
           </argument>
         </arguments>

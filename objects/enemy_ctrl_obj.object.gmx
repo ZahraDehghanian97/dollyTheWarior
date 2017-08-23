@@ -28,9 +28,12 @@
             <string>allowToShowMessage = true ;
 alarm[0] = 20;
 numberOfZooksin = 0 ;
-enemyinlevel = 20 ;
+enemyinlevel = 10 ;
 numberofEnemy = 0 ;
 killedenemy = 0 ;
+first = false ;
+firstBlockX = 0 ;
+firstBlockY = 0 ;
 </string>
           </argument>
         </arguments>

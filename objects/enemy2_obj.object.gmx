@@ -110,6 +110,10 @@ else if(x&lt;0 ) {
     instance_destroy();
 }
 else {
+if(enemy_ctrl_obj.first = true ){
+        path_end();
+    
+    }
 //x-=5;
 }
 </string>

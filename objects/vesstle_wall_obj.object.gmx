@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>injurySeverity = 0 ;
+
 </string>
           </argument>
         </arguments>
@@ -71,19 +72,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(central_ctrl_obj.run == true ) {x-=2 ;}
-if(injurySeverity ==1 ){
-}
-if(injurySeverity ==2 ){}
-if(injurySeverity ==3 ){}
-if(injurySeverity &gt; 4 ){
+            <string>if(sprite_index == septum_block_vesttle_spr)
+{if(central_ctrl_obj.run == true ) {x-=2 ;}
+//if(injurySeverity ==1 ){}
+//if(injurySeverity ==2 ){}
+//if(injurySeverity ==3 ){}
+if(injurySeverity &gt;3 ){
  //if(enemy_ctrl_obj.allowToShowMessage){
     central_ctrl_obj.alarm[0] = 1 ;
+    if(enemy_ctrl_obj.first == false)
     show_message("you are dead");
     enemy_ctrl_obj.allowToShowMessage = false ;
  //   alarm[1] =30 ;
-    instance_destroy() ;
+ 
+    sprite_index = nothimg_spr;
  //   }
+}
+}
+ if(sprite_index == nothimg_spr and enemy_ctrl_obj.first == false){
+    enemy_ctrl_obj.first = true ;
+    //show_message("i am here ")
+    enemy_ctrl_obj.firstBlockX = x ;
+    enemy_ctrl_obj.firstBlockY = y ;
+
 }
 </string>
           </argument>

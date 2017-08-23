@@ -181,10 +181,11 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (other){
+            <string>if(setMoveDir == 1 ) {
+with (other){
 instance_destroy();
 }
-
+}
 </string>
           </argument>
         </arguments>
@@ -207,10 +208,11 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (other){
+            <string>if(setMoveDir == 1 ) {
+with (other){
 instance_destroy();
 }
-
+}
 </string>
           </argument>
         </arguments>
@@ -233,10 +235,13 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (other){
+            <string>
+if(setMoveDir == 1 ) {
+with (other){
+
 instance_destroy();
 }
-
+}
 </string>
           </argument>
         </arguments>

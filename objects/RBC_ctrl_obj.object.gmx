@@ -110,10 +110,11 @@ w  = instance_number(RBC_obj) ;
 r = random_range(0,w);
 
 idddd = instance_find(RBC_obj,r ) ;
-   
-     if(idddd.sheild == false ){
+   if (instance_exists(idddd)){
+     if(  idddd.sheild == false ){
         idddd.alarm[0] = 1 ;
        // temp  = w ; 
+    }
     }
 //    if( lostRBC == 80 ) {show_message("protect your cell , you have been lost lots of them ... ")
 
